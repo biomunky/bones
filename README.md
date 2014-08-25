@@ -8,7 +8,9 @@ It requires SBT 0.13.0.  I use the <a href='https://github.com/paulp/sbt-extras'
 Includes
 
   - Spray Json
-  - Specs 2
+  - Specs 2 - this is the one test framework I use with scala
   - Mockito
-  - SBT Idea
-  - SBT Eclipse
+  - Typesafe Config - https://github.com/typesafehub/config
+  - Argonaut - because one json parsing library isn't enough
+  - SBT Idea - plugin
+  - SBT Eclipse - plugin

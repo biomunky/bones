@@ -2,7 +2,7 @@ name := "bones"
 
 version := "0.1"
 
-scalaVersion := "2.10.2"
+scalaVersion := "2.10.4"
 
 scalacOptions := Seq("-deprecation", "-unchecked", "-Xlint", "-feature", "-encoding", "utf8")
 
@@ -20,5 +20,7 @@ resolvers ++= Seq(
 libraryDependencies ++= Seq(
   "io.spray" %%  "spray-json" % "1.2.5",
   "org.specs2" %% "specs2" % "2.3.4" % "test",
-  "org.mockito" % "mockito-core" % "1.9.5" % "test"
+  "org.mockito" % "mockito-core" % "1.9.5" % "test",
+  "com.typesafe" % "config" % "1.2.1",
+  "io.argonaut" %% "argonaut" % "6.0.4"            
 )
