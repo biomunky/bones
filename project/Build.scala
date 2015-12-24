@@ -13,8 +13,7 @@ object BuildConfig {
   val buildNumber = if (envBuildNumber.nonEmpty) envBuildNumber else "0.0.1-SNAPSHOT"
   val buildWhen = (new java.util.Date).toString
   val buildMachine = java.net.InetAddress.getLocalHost.getHostName
-  val name = "bones"
-  val organisation = "me.biomunky"
+  val artifactName = "bones"
 
   def env(key: String, default: String = ""): String = Option(System.getenv get key) getOrElse default
 }

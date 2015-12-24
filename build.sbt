@@ -4,6 +4,10 @@ import aether.Aether.createArtifact
 import sbt.Package.ManifestAttributes
 import sbtrelease.Git
 
+name := BuildConfig.artifactName
+
+organization := "me.biomunky"
+
 crossPaths := false
 
 parallelExecution in Test := true
@@ -65,12 +69,12 @@ test in assembly := {}
 
 releaseSettings
 
-credentials += Credentials("Sonatype Nexus Repository Manager", "<maven.server.loc>", "<user>", "<password>")
+credentials += Credentials("Sonatype Nexus Repository Manager", "localhost", "username", "password")
 
 publishArtifact in Test := false
 
 publishTo := {
-  val nexus = "http://<your.neuxs.box>/"
+  val nexus = "http://your.nexus.box"
   if (isSnapshot.value)
     Some("snapshots" at nexus + "nexus/content/repositories/snapshots")
   else
@@ -88,4 +92,4 @@ aetherPublishSettings
 
 publishMavenStyle := true
 
-assemblyJarName in assembly := s"${BuildConfig.name}-${BuildConfig.buildNumber}.jar"
+assemblyJarName in assembly := s"${BuildConfig.artifactName}-${BuildConfig.buildNumber}.jar"
