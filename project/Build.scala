@@ -2,8 +2,8 @@ import sbt._
 
 
 object Resolvers {
-  lazy val releases = "http://maven.wwsga.me/"
-  lazy val Snapshots = "http://maven.wwsga.me/SNAPSHOTS"
+  lazy val releases = "http://my.maven.repo/"
+  lazy val Snapshots = "http://my.maven.repo/SNAPSHOTS"
 }
 
 object BuildConfig {
