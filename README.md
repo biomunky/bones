@@ -2,15 +2,17 @@
 
 This is a simple project to clone and use for scala hacking
 
-It requires SBT 0.13.0.  I use the <a href='https://github.com/paulp/sbt-extras'>rebel cut by PaulP</a>
+You should use <a href='https://github.com/paulp/sbt-extras'>SBT rebel cut by PaulP</a>
 
+This repo contains a skelton for Scala 2.12.2 hacking. The following things are included:
 
-Includes
+* typesafe config
+* typesafe scala logging
+* logback classic
+* json4s
+* date4j
+* scalaj http
+* jsoup
+* specs2
+* mockito-core
 
-  - Spray Json
-  - Specs 2 - this is the one test framework I use with scala
-  - Mockito
-  - Typesafe Config - https://github.com/typesafehub/config
-  - Argonaut - because one json parsing library isn't enough
-  - SBT Idea - plugin
-  - SBT Eclipse - plugin
