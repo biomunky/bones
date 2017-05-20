@@ -24,15 +24,16 @@ resolvers ++= Seq(
 val json4sVersion = "3.5.2"
 
 libraryDependencies ++= Seq(
-  "com.typesafe" % "config" % "1.3.0",
-  "com.typesafe.scala-logging" %% "scala-logging" % "3.5.0",
-  "ch.qos.logback" % "logback-classic" % "1.1.7",
-  "org.json4s"   %% "json4s-native"     % json4sVersion,
-  "org.json4s"   %% "json4s-jackson"    % json4sVersion,
-  "com.darwinsys" % "hirondelle-date4j" % "1.5.1",
-  "org.scalaj" %% "scalaj-http" % "2.3.0",
-  "org.jsoup" % "jsoup" % "1.8.3",
-  "org.specs2" %% "specs2-core" % "3.8.9" % "test",
-  "org.mockito" % "mockito-core" % "1.9.5" % "test"
+  "com.typesafe.scala-logging" %% "scala-logging"     % "3.5.0",
+  "com.typesafe"                % "config"            % "1.3.0",
+  "ch.qos.logback"              % "logback-classic"   % "1.1.7",
+  "org.json4s"                 %% "json4s-native"     % json4sVersion,
+  "org.json4s"                 %% "json4s-jackson"    % json4sVersion,
+  "com.darwinsys"               % "hirondelle-date4j" % "1.5.1",
+  "org.scalaj"                 %% "scalaj-http"       % "2.3.0",
+  "org.jsoup"                   % "jsoup"             % "1.8.3",
+  "org.specs2"                 %% "specs2-core"       % "3.8.9" % "test",
+  "org.specs2"                 %% "specs2-mock"       % "3.8.9" % "test",
+  "org.mockito"                 % "mockito-core"      % "2.8.9" % "test"
 )
 
